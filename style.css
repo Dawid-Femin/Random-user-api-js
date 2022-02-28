@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: rgb(255, 255, 255);
+    --background-color: linear-gradient(300deg,hsl(240deg 100% 20%) 0%,hsl(319deg 100% 30%) 24%,hsl(346deg 83% 51%) 49%,hsl(30deg 100% 55%) 74%,hsl(55deg 100% 50%) 100%);
+    --small-text-color: #555;
+}
+
+body {
+    background-image: var(--background-color);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    padding: 2em;
+    font-family: 'Oleo Script';
+}
+
+h2 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 1em;
+    font-family: 'Dancing Script', cursive;
+    font-size: 3em;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+}
+
+#avatar-img {
+    margin: .3em;
+}
+
+.user-profile {
+    margin: auto;
+    padding: 2em;
+    width: 25em;
+    background-color: var(--primary-color);
+    border-radius: .4em;
+    color: var(--small-text-color);
+    border-radius: 5em;
+    box-shadow: 0 0 2em #333;
+}
+
+#avatar-img {
+    border-radius: 50%;
+}
+
+#full-name {
+    font-size: 0.95em;
+    font-weight: bold;
+}
+
+#username {
+    font-size: 0.8em;
+}
+
+#user-details {
+    margin-top: 1em;
+    font-size: 0.8em;
+    color: var(--small-text-color);
+}
